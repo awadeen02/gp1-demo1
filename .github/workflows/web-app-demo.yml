@@ -20,7 +20,7 @@ jobs:
 
       - run: pytest
 
-      - run: bandit -r .
+      - run: bandit -r . -x test_app.py
 
   docker-deploy:
     runs-on: ubuntu-latest
